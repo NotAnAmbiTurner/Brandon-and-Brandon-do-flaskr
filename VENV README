@@ -1,0 +1,20 @@
+# VENV README (HOW TO USE VENV)
+
+There are two verisons of virtualenv - one for windows, and one for linux.
+
+The Linux version is stored in venv-linux and can be activated using 'source venv-linux/bin/activate'.
+
+The Windows version is stored in venv-win activated using 'venv-win/Scripts/activate.bat'.
+
+Venv comes with pip, so while you are in a venv, you can install packages as normal (eg. pip install Flask).
+
+Pip can keep a list of packages it relies on. If you type 'pip freeze' you will see a list of all the dependancies of your venv.
+
+Usefully, Pip can also store the list of packages it relies on to a .txt file, and then automatically install all of those packages.
+
+To store requirements to a text file, use 'pip freeze > requirements.txt' [requirements.txt is used by convention]. THIS WILL STORE THE REQURIMENTS.TXT FILE IN YOUR CURRENT DIR.
+
+Use 'pip install -r requirements.txt' to install all of the dependencies listed in the requirements.txt file.
+
+
+SO -- here's what we do. Keep a requirements.txt file in the top level of our repo, and just make sure to keep it updated any time a new package is installed. BOOM - cross platform amazingness, from anywhere.
