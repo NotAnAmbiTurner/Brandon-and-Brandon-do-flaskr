@@ -2,9 +2,17 @@
 
 There are two verisons of virtualenv - one for windows, and one for linux.
 
+To create a virtual environment:
+  first install virtualenv using 'pip install virtualenv' ([or another way|http://flask.pocoo.org/docs/0.10/installation/];
+  then make a virtualenvironment by CHANGING TO YOUR TARGET DIR and using 'virtualenv name-of-virtualenv'.
+  
+All the files associated with the given virtual environment will be stored in a folder called 'name-of-virtualenv', including the all-important activate scripts.
+
 The Linux version is stored in venv-linux and can be activated using 'source venv-linux/bin/activate'.
 
 The Windows version is stored in venv-win activated using 'venv-win/Scripts/activate.bat'.
+
+You can type 'deactivate' from within a venv to turn it off.
 
 Venv comes with pip, so while you are in a venv, you can install packages as normal (eg. pip install Flask).
 
